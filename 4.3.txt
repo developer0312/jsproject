@@ -1,0 +1,20 @@
+<html>
+    <body>
+        <ol id="todo-list">
+        
+        </ol>
+<script>
+    var tasks = ['Buy lemonade', 'Make toasts', 'Repair car', 'Play games', 'Pet a cat'];
+    function todo(array){
+    var list = document.getElementById("todo-list");
+        for(var i = 0; i<array.length; i++){
+            
+    var newLI = document.createElement("li");
+            newLI.appendChild(document.createTextNode(array[i]));
+            list.appendChild(newLI);
+        }
+    return list;
+    }
+    document.getElementById("todo-list").appendChild(todo(tasks));
+    </script>
+    </body>

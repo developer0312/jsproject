@@ -1,0 +1,29 @@
+<html> <head>
+    
+    </head>
+
+<body>
+    <h1> TO DO</h1>
+    <form id="todoForm"></form>
+   <!-- <input id="todoInput">
+    <button type="button" onclick="todoList()"> Add</button> -->
+    <ul id="todoList">
+    
+    </ul>
+    <script>
+        while(q!==null){
+        var q = prompt("Task for today");
+            
+   // function todoList(){
+      //  var item = document.getElementById("todoInput").value;
+        var text = document.createTextNode(q);
+        var newItem = document.createElement("li");
+        newItem.appendChild(text);
+        document.getElementById("todoList").appendChild(newItem);
+            
+      //  }
+    
+           
+           }
+    </script>
+    </bo

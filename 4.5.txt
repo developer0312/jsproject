@@ -1,0 +1,23 @@
+<html> 
+<body>
+    <div id="cart-items">
+	<div class="item">Milk 1 l.<span class="qty">x 2</span></div>
+	<div class="item">Cola 1.5 l. <span class="qty">x 1</span></div>
+	<div class="item">Bread<span class="qty">x 2</span></div>
+	<div class="item">Cheese<span class="qty">x 1</span></div>
+	<div class="item">Chocolate bar<span class="qty">x 3</span></div>
+</div>
+
+    <script>
+var cola = document.getElementsByClassName("item")[1];
+	cola.remove();
+	choc = document.getElementsByClassName("item")[3];
+	var fish = document.createTextNode("Canned Fish");
+	var cFish = document.createElement("div");
+	canfish.appendChild(fish);
+	var main= document.getElementById("cart-items");
+	main.replaceChild(cFish, choc);
+    
+    </script>
+    </body>
+</html>
